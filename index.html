@@ -1,12 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criando git</title>
+  <meta charset="UTF-8">
+  <title>Formulário na Caixinha</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .caixinha {
+      width: 320px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+    .faixa {
+      background-color: #7fdbca;
+      height: 40px;
+      width: 100%;
+    }
+
+    .conteudo {
+      padding: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, button {
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #404343;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #6ac8b5;
+    }
+  </style>
 </head>
 <body>
-    <h1>boa aula</h1>
-    <h3>hoje criaremos um novo repositório </h3>
+  <div class="caixinha">
+    <div class="faixa"></div>
+    <div class="conteudo">
+      <form action="#" method="post">
+        
+        <input type="text" name="nome" placeholder="Nome">
+
+        <input type="email" name="email" placeholder="Email">
+
+        <input type="password" name="senha" placeholder="Senha"> 
+        
+        <button type="submit">Enviar</button>
+
+      </form>
+    </div>
+  </div>
 </body>
 </html>
